@@ -1,4 +1,4 @@
-＃基于opencv的追踪摄像头
+＃ 基于opencv的追踪摄像头
 ---
 opencv-python进行人脸检测和pid计算
 
