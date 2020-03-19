@@ -3,8 +3,8 @@
 Servo servox;
 Servo servoy;
 
-const char* Ssid     = "@PHICOMM_BC";
-const char* Password = "lijiangchun112";
+const char* Ssid     = "your_wifi-id";
+const char* Password = "your_password";
 
 const char* Server = "192.168.2.175";
 const int Port = 2666;
