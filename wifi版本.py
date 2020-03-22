@@ -31,10 +31,10 @@ def main():
                 a = 180
             elif a < 0:
                 a = 0
-            if b > 180:
-                b = 180
-            elif b < 0:
-                b = 0
+            if b > 135:
+                b = 135
+            elif b < 45:
+                b = 45
         # ff1 = int.to_bytes(a, length=1, byteorder='big', signed=False)
         # ff2 = int.to_bytes(b, length=1, byteorder='big', signed=False)
         ss = struct.pack("BB", a, b)
