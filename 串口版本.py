@@ -17,16 +17,16 @@ def main():
         faces = face_detector.detectMultiScale(gray, 1.1, 2)
         for x, y, w, h in faces:
             cv.circle(frame, (int(x+w/2), int(y+h/2)), h, (255, 255, 255), -1)
-            a = int(a - (320 - (x + w / 2)) / 3)
-            b = int(b - (240 - (y + h / 2)) / 3)
+            a = int(a - (320 - (x + w / 2)) / 50)
+            b = int(b + (240 - (y + h / 2)) / 50)
             if a > 180:
                 a = 180
             elif a < 0:
                 a = 0
-            if b > 180:
-                b = 180
-            elif b < 0:
-                b = 0
+            if b > 135:
+                b = 135
+            elif b < 45:
+                b = 45
             os.system(com_transfer+str(a*1000+b))
         cv.imshow("video", frame)
         c = cv.waitKey(50)
