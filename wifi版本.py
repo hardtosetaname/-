@@ -25,8 +25,8 @@ def main():
         faces = face_detector.detectMultiScale(gray, 1.1, 2)
         for x, y, w, h in faces:
             cv.circle(frame, (int(x + w / 2), int(y + h / 2)), h, (255, 255, 255), -1)
-            a = int(a - (320 - (x + w / 2)) / 3)
-            b = int(b - (240 - (y + h / 2)) / 3)
+            a = int(a - (320 - (x + w / 2)) / 50)
+            b = int(b + (240 - (y + h / 2)) / 50)
             if a > 180:
                 a = 180
             elif a < 0:
